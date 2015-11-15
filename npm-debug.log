@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test',
+1 verbose cli   '--',
+1 verbose cli   '--browser=safari' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info pretest zendesk-browser-tests@
+6 info test zendesk-browser-tests@
+7 verbose unsafe-perm in lifecycle true
+8 info zendesk-browser-tests@ Failed to exec test script
+9 verbose stack Error: zendesk-browser-tests@ test: `mocha allTests.js --no-timeouts --reporter spec "--browser=safari"`
+9 verbose stack Exit status 2
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid zendesk-browser-tests@
+11 verbose cwd /Users/badris/zendesktodo
+12 error Darwin 15.0.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "test" "--" "--browser=safari"
+14 error node v4.2.2
+15 error npm  v2.14.7
+16 error code ELIFECYCLE
+17 error zendesk-browser-tests@ test: `mocha allTests.js --no-timeouts --reporter spec "--browser=safari"`
+17 error Exit status 2
+18 error Failed at the zendesk-browser-tests@ test script 'mocha allTests.js --no-timeouts --reporter spec "--browser=safari"'.
+18 error This is most likely a problem with the zendesk-browser-tests package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     mocha allTests.js --no-timeouts --reporter spec "--browser=safari"
+18 error You can get their info via:
+18 error     npm owner ls zendesk-browser-tests
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
